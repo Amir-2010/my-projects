@@ -11,6 +11,12 @@ temp={
 engine=pysound.init()
 
 def tempreture(value,input_unit,output_unit):
+    """
+    this function give a 3 values
+    firs one is the value of your tempreture
+    second one os for your input tempreture quentity
+    last one is the dgree quantity
+    """
     if input_unit == "C":
         if output_unit == "F":
             return value * 1.8 + 32

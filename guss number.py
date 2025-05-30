@@ -110,7 +110,7 @@ def hard():
     global user_input
     heart=5
     while heart>=1:
-             if user_input not in ["5","exit"]:
+        if user_input not in ["5","exit"]:
             engine.say(f"you have {heart} chabce")
             engine.runAndWait()
             print(f"you have a {heart} chance")
@@ -130,12 +130,11 @@ def hard():
                 engine.runAndWait()
                 print("the number is smaller than you think")
                 heart-=1
-        else:
-            break
-    engine.say(f"computer choice is {pc_number}")
-    engine.runAndWait()
-    print(f"computer choice is {pc_number}")
-    menu()
+            else:
+                engine.say(f"computer choice is {pc_number}")
+                engine.runAndWait()
+                print(f"computer choice is {pc_number}")
+                menu()
 
 def extera_hard():
     """
@@ -146,7 +145,7 @@ def extera_hard():
     global user_input
     heart=5
     while heart>=1:
-              if user_input not in ["5","exit"]:
+        if user_input not in ["5","exit"]:
             engine.say(f"you have {heart} chabce")
             engine.runAndWait()
             print(f"you have a {heart} chance")
@@ -155,7 +154,7 @@ def extera_hard():
             user_input1=int(input("enter a number bethween 1 to 40: "))
             if user_input1 == pc_number:
                 print("you win")
-                break
+                menu()
             elif user_input1 < pc_number:
                 engine.say("the number is bigger thab you think")
                 engine.runAndWait()
@@ -166,11 +165,10 @@ def extera_hard():
                 engine.runAndWait()
                 print("the number is smaller than you think")
                 heart-=1
-        else:
-            break
-    engine.say(f"computer choice is {pc_number}")
-    engine.runAndWait()
-    print(f"computer choice is {pc_number}")
-    menu()
+            else:
+                engine.say(f"computer choice is {pc_number}")
+                engine.runAndWait()
+                print(f"computer choice is {pc_number}")
+                menu()
 
 menu()

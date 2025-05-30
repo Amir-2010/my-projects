@@ -63,6 +63,7 @@ while True:
     output_unit=output_unit.upper()
     result=tempreture(value=value,input_unit=input_unit,output_unit=output_unit)
     engine.say(f"the result is {result}")
+    engine.runAndWait()
     print(f"the result is {result}")
     engine.say("do you want to continue")
     engine.runAndWait()

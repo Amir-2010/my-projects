@@ -1,5 +1,8 @@
 
 def menu():
+    """
+    this is the menu function
+    """
     global menu_question
     global numbers
     print("1.add \n2.subtract \n3.multiply \n4.divide \n5.exit")

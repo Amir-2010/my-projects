@@ -14,6 +14,6 @@ def security(length):
     
     return security_password
 
-password_length=input("how long is your password lenghth?: ")
+password_length=int(input("how long is your password lenghth?: "))
 our_password=security(password_length)
 print(our_password)

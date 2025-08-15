@@ -2,6 +2,7 @@
 exit_variable = False
 
 while exit_variable == False:
+    #this loop is continiue while user don't whant to continiue
     try:
         user_number = float(input("enter one decimal number: "))
         low_number = int(user_number)
@@ -23,4 +24,5 @@ while exit_variable == False:
                 print("you must to answer with yes or no")
                 try_again = input("do you want to try again: ")
     except ValueError:
+
         print("you must to enter number \033[31mnot letter\033[0m😏\ntry again please")
